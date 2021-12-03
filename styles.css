@@ -1,0 +1,95 @@
+body{
+	background-color: #11181A;
+}
+
+h2{
+	text-align: center;
+	font-family: "Gill Sans", sans-serif;
+	position: absolute;
+	color: white;
+	left: 50%;
+	top: 5%;
+	font-size: 28px;
+	transform: translateX(-50%);
+}
+
+input{
+	text-align: center;
+	background-color:#454F57;
+	border: none;
+	padding: 5px;
+	border-radius: 40px;
+}
+
+input:focus{
+	border: none;
+	outline: none;
+	color: white;
+}
+
+span{
+	font-size: 15px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 73%;
+	color: white;
+}
+
+span a{
+	color: #09C372;
+	text-decoration: none;
+}
+
+.username, .password{
+	height: 30px;
+	width: 220px;
+	position: absolute;
+	font-size: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.username{
+	top: 35%;
+}
+
+.password{
+	top: 55%;
+}
+
+.form-div{
+	position: absolute;
+	width: 280px;
+	height: 350px;
+	padding: 20px;
+	background-color: #2A2D35;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px 20px#0D1114;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.btn{
+	background-color: #09C372;
+	bottom: 55px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 15px;
+	padding: 7px;
+	position: absolute;
+	height: 40px;
+	width: 150px;
+	font-weight: 700;
+	font-family: "Gill Sans", sans-serif;
+}
+
+.result-title{
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}

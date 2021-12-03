@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{form_title}}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+  </head>
+  <body>
+    <div class="form-div">
+      {% if form_title == 'Login Form' %}
+      <form method="post" action="/login">
+        <h2>{{form_title}}</h2>
+        <input type="text" name="username" class="username" placeholder="username" autocomplete="off" maxlength="24">
+        <input type="password" name="password" class="password" placeholder="password" maxlength="19">
+        <input type="submit" name="submit-button" class="btn">
+      </form>
+      {% else %}
+      <form method="post" action="/register">
+        <h2>{{form_title}}</h2>
+        <input type="text" name="username" class="username" placeholder="username" autocomplete="off" maxlength="24">
+        <input type="password" name="password" maxlength="19" class="password" placeholder="password">
+        <input type="submit" name="submit-button" class="btn">
+      </form>
+      {% endif %}
+    </div>
+    {% if form_title == 'Register Form' %}
+    <span>Already have an account ? <a href="{{url_for('login_page')}}">Login</a></span>
+    {% else %}
+    <span>Don't have an account ? <a href="{{url_for('register_page')}}">Register</a></span>
+    {% endif %}
+  </body>
+</html>
